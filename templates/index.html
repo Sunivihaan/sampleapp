@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognos Dashboard Embedded</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+
+<body background="/static/img/background.jpg">
+    <h3><font color="white">Cognos Dashboard Embedded  </font></h3>
+    <span id="sessionCode">{{ sessionCode }}</span><br>
+
+    <button id="go" class="button-primary">Launch a blank Dashboard</button>
+    <hr />
+    <div id="containerDivId" style="height:800px; width:100%;">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/CognosApi.js"></script>
+    <script src="/static/js/client.js"></script>
+</body>
+
+</html>
