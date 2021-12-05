@@ -1,0 +1,80 @@
+{
+  "xsd": "https:\/\/ibm.com\/daas\/module\/1.0\/module.xsd",
+  "source": {
+    "id": "StringID",
+    "srcUrl": {
+      "sourceUrl": "https:\/\/raw.githubusercontent.com\/ishida330\/cde-simple-sample\/master\/static\/json\/CSV_jp.csv",
+      "mimeType": "text\/csv",
+      "property": [
+        {
+          "name": "separator",
+          "value": ", "
+        },
+        {
+          "name": "ColumnNamesLine",
+          "value": "true"
+        }
+      ]
+    }
+  },
+  "table": {
+    "name": "SalesDetails",
+    "description": "description of the table for visual hints ",
+    "column": [
+      {
+        "name": "年",
+        "description": "String",
+        "datatype": "BIGINT",
+        "nullable": true,
+        "label": "年L",
+        "usage": "identifier",
+        "regularAggregate": "countDistinct",
+        "taxonomyFamily": "cYear"
+      },
+      {
+        "name": "商品区分",
+        "description": "String",
+        "datatype": "NVARCHAR(100)",
+        "nullable": true,
+        "label": "商品区分L",
+        "usage": "identifier",
+        "regularAggregate": "countDistinct"
+      },
+      {
+        "name": "注文方法",
+        "datatype": "NVARCHAR(100)",
+        "nullable": true,
+        "label": "注文方法L",
+        "usage": "identifier",
+        "regularAggregate": "countDistinct"
+      },
+      {
+        "name": "国",
+        "datatype": "NVARCHAR(100)",
+        "nullable": true,
+        "label": "国L",
+        "usage": "identifier",
+        "regularAggregate": "countDistinct",
+        "taxonomyFamily": "cCountry"
+      },
+      {
+        "name": "売上",
+        "datatype": "DOUBLE",
+        "nullable": true,
+        "label": "売上L",
+        "usage": "fact",
+        "regularAggregate": "total"
+      },
+      {
+        "name": "数量",
+        "datatype": "BIGINT",
+        "nullable": true,
+        "label": "数量L",
+        "usage": "fact",
+        "regularAggregate": "total"
+      }
+    ]
+  },
+  "label": "Module Name",
+  "identifier": "moduleId"
+}
