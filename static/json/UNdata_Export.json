@@ -55,8 +55,8 @@
         "label": "Methane",
         "usage": "fact",
         "regularAggregate": "total"
-      }
-	  {
+      },
+      {
         "name": "NitrousOxide",
         "datatype": "DOUBLE",
         "nullable": true,
