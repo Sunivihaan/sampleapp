@@ -22,51 +22,14 @@
     "description": "description of the table for visual hints ",
     "column": [
       {
-        "name": "Country or Area",
+        "name": "Country",
         "description": "Country",
         "datatype": "NVARCHAR(100)",
         "nullable": true,
-        "label": "Country or Area",
+        "label": "Country",
         "usage": "attribute",
         "regularAggregate": "none",
-		"taxonomyFamily": "cCountry"
-      },
-      {
-        "name": "Year",
-        "description": "Year",
-        "datatype": "BIGINT",
-        "nullable": true,
-        "label": "Year",
-        "usage": "attribute",
-        "regularAggregate": "none",
-        "taxonomyFamily": "cYear"
-      },
-      {
-        "name": "CO2",
-		"description": "CO2",
-        "datatype": "DOUBLE",
-        "nullable": true,
-        "label": "CO2",
-        "usage": "fact",
-        "regularAggregate": "total"
-      },		
-      {
-        "name": "Methane",
-		"description": "Methane",
-        "datatype": "DOUBLE",
-        "nullable": true,
-        "label": "Methane",
-        "usage": "fact",
-        "regularAggregate": "total"
-      },
-	  {
-        "name": "NitrousOxide",
-		"description": "NitrousOxide",
-        "datatype": "DOUBLE",
-        "nullable": true,
-        "label": "NitrousOxide",
-        "usage": "fact",
-        "regularAggregate": "total"
+	"taxonomyFamily": "cCountry"
       }
     ]
   },
