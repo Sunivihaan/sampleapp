@@ -8,7 +8,7 @@
       "property": [
         {
           "name": "separator",
-          "value": ", "
+          "value": ","
         },
         {
           "name": "ColumnNamesLine",
