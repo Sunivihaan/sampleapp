@@ -7,10 +7,6 @@
       "mimeType": "text\/csv",
       "property": [
         {
-          "name": "separator",
-          "value": ", "
-        },
-        {
           "name": "ColumnNamesLine",
           "value": "true"
         }
