@@ -14,9 +14,9 @@ application  = Flask(__name__)
 
 # constant
 my_Flask_url = "http://127.0.0.1:5000/"
-api_endpoint_url = "https://eu-gb.dynamic-dashboard-embedded.cloud.ibm.com/daas"
-client_id = "a05d92cd-704f-4a21-b8c8-cd82b2da88f6"
-client_secret = "8f541030178d588d538acf893e6ac8d11689801e"
+api_endpoint_url = "https://kmkklll"
+client_id = "jjklll;l"
+client_secret = "nnm,,,,,"
 
 @application.route("/")
 def index():
